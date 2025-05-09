@@ -1,8 +1,7 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import Icon from '@/components/ui/icon';
+import Icon from "@/components/ui/icon";
 
 const Navbar = () => {
   return (
@@ -13,7 +12,7 @@ const Navbar = () => {
             <Icon name="Flower2" className="h-6 w-6" />
             <span className="font-playfair text-xl font-bold">ЗеленыйСад</span>
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-6">
             <NavLink to="/">Главная</NavLink>
             <NavLink to="/plants">Растения</NavLink>
@@ -21,12 +20,15 @@ const Navbar = () => {
             <NavLink to="/marketplace">Маркет</NavLink>
             <NavLink to="/community">Сообщество</NavLink>
           </nav>
-          
+
           <div className="flex items-center space-x-3">
             <Button variant="ghost" className="text-white">
               <Icon name="Search" className="h-5 w-5" />
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-primary-300">
+            <Button
+              variant="outline"
+              className="text-white border-white hover:bg-primary-300"
+            >
               Войти
             </Button>
           </div>
@@ -36,7 +38,13 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ children, to }: { children: React.ReactNode; to: string }) => {
+const NavLink = ({
+  children,
+  to,
+}: {
+  children: React.ReactNode;
+  to: string;
+}) => {
   return (
     <Link
       to={to}
