@@ -16,6 +16,7 @@ const Navbar = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <NavLink to="/">Главная</NavLink>
             <NavLink to="/plants">Растения</NavLink>
+            <NavLink to="/calendar">Календарь посадки</NavLink>
             <NavLink to="/tips">Советы</NavLink>
             <NavLink to="/marketplace">Маркет</NavLink>
             <NavLink to="/community">Сообщество</NavLink>
